@@ -1,10 +1,9 @@
 <template>
   <section class="profile-infobox" aria-labelledby="profile-name">
     <h2 id="profile-name">Glenn Tugade Rabadon</h2>
-    <div class="profile-image-placeholder" role="img" aria-label="Portrait placeholder for Glenn Tugade Rabadon">
-      <span class="profile-monogram" aria-hidden="true">GTR</span>
-      <span>Portrait pending authorization</span>
-    </div>
+    <figure class="profile-portrait">
+      <img src="/images/glenn-tugade-rabadon-profile.png" alt="Glenn Tugade Rabadon">
+    </figure>
 
     <dl>
       <dt>Known as</dt><dd>GTR</dd>

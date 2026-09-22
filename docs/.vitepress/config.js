@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 const siteUrl = 'https://glenn-tugade-rabadon-biography.pages.dev/'
 const pageDescription = 'Biography of Glenn Tugade Rabadon, a Filipino pilot, educator, entrepreneur, investor, and philanthropist.'
+const socialImageUrl = 'https://glenn-tugade-rabadon-biography.pages.dev/images/og-glenn-tugade-rabadon.jpg'
+const socialImageAlt = 'Glenn Tugade Rabadon — Biography & Profile'
 const personStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -27,9 +29,15 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'Glenn Tugade Rabadon - Wiki & Biography' }],
     ['meta', { property: 'og:description', content: pageDescription }],
     ['meta', { property: 'og:url', content: siteUrl }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { property: 'og:image', content: socialImageUrl }],
+    ['meta', { property: 'og:image:alt', content: socialImageAlt }],
+    ['meta', { property: 'og:image:width', content: '1733' }],
+    ['meta', { property: 'og:image:height', content: '908' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Glenn Tugade Rabadon - Wiki & Biography' }],
     ['meta', { name: 'twitter:description', content: pageDescription }],
+    ['meta', { name: 'twitter:image', content: socialImageUrl }],
+    ['meta', { name: 'twitter:image:alt', content: socialImageAlt }],
     ['script', { type: 'application/ld+json' }, JSON.stringify(personStructuredData)],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
