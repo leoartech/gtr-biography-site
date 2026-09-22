@@ -1,0 +1,15 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/.temp/
+docs/.vitepress/.cache/
+docs/.vitepress/cache/
+.edge-qa-2/
+.env
+.env.*
+*.log
+
+# Local visual QA captures; not part of the published site.
+docs/layout-*.png
+docs/qa-*.png
+docs/typography-*.png
+docs/screenshot.png
