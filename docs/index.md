@@ -14,7 +14,7 @@ CAPT. GLENN TUGADE RABADON, MEAM, PhDM
 
 A Pilot. A Leader. An Entrepreneur. A Builder. A Filipino Philanthropist.
 
-Capt. Glenn Tugade Rabadon, known to many simply as “GTR,” is a Filipino aviation professional, educator, entrepreneur, investor, and philanthropist whose life has been defined by discipline, perseverance, leadership, and a relentless drive to build opportunities for others.<sup id="ref-1"><a href="#cite-1" aria-label="Reference 1">[1]</a></sup>
+Capt. Glenn Tugade Rabadon, known to many simply as “GTR,” is a Filipino aviation professional, Educator, Entrepreneur, Investor, and Philanthropist whose life has been defined by discipline, perseverance, leadership, and a relentless drive to build opportunities for others.<sup id="ref-1"><a href="#cite-1" aria-label="Reference 1">[1]</a></sup>
 
 Born on November 27, 1984, and proudly from Pangasinan, GTR is now based in Manila. With more than 23 years of professional experience in aviation, he has built a career that extends far beyond the cockpit-into aviation education, management, entrepreneurship, agriculture, aquaculture, hospitality, consulting, and community development.<sup id="ref-2"><a href="#cite-2" aria-label="Reference 2">[2]</a></sup>
 
@@ -40,7 +40,7 @@ For GTR, aviation is not merely a profession.
 
 It is a way of life.
 
-He earned his Bachelor of Science in Aviation, Major in Flying, from Airlink International Aviation School, followed by a Master of Education in Aeronautical Management from the Philippine State College of Aeronautics.
+He earned his Bachelor of Science in Aviation, Major in Flying, from Air Link International Aviation School, followed by a Master of Education in Aeronautical Management from the Philippine State College of Aeronautics.
 
 He further pursued advanced studies and completed his Doctor of Philosophy in Management at Northwest Samar State University.<sup id="ref-4"><a href="#cite-4" aria-label="Reference 4">[4]</a></sup>
 
@@ -195,9 +195,9 @@ And a friend who believes that no matter how far life takes you, you should neve
 
 From Pangasinan to Manila.
 
-From the cockpit to the classroom.
+From the Cockpit to the Classroom.
 
-From aviation to entrepreneurship.
+From Aviation to Entrepreneurship.
 
 From the Philippines to the world.
 
