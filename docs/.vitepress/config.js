@@ -1,8 +1,19 @@
 import { defineConfig } from 'vitepress'
 
+const siteUrl = 'https://glenn-tugade-rabadon-biography.pages.dev/'
+const pageDescription = 'Biography of Glenn Tugade Rabadon, a Filipino pilot, educator, entrepreneur, investor, and philanthropist.'
+const personStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Glenn Tugade Rabadon',
+  alternateName: 'GTR',
+  url: siteUrl,
+  description: pageDescription
+}
+
 export default defineConfig({
   title: 'Glenn Tugade Rabadon - Wiki & Biography',
-  description: 'Biography of Glenn Tugade Rabadon, a Filipino pilot, educator, entrepreneur, investor, and philanthropist.',
+  description: pageDescription,
   lang: 'en-US',
   srcExclude: ['architecture-plan.md', 'biography-details.md'],
   sitemap: {
@@ -11,6 +22,15 @@ export default defineConfig({
   head: [
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'author', content: 'Glenn Tugade Rabadon' }],
+    ['link', { rel: 'canonical', href: siteUrl }],
+    ['meta', { property: 'og:type', content: 'profile' }],
+    ['meta', { property: 'og:title', content: 'Glenn Tugade Rabadon - Wiki & Biography' }],
+    ['meta', { property: 'og:description', content: pageDescription }],
+    ['meta', { property: 'og:url', content: siteUrl }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'Glenn Tugade Rabadon - Wiki & Biography' }],
+    ['meta', { name: 'twitter:description', content: pageDescription }],
+    ['script', { type: 'application/ld+json' }, JSON.stringify(personStructuredData)],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
