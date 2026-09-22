@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'en-US',
   srcExclude: ['architecture-plan.md', 'biography-details.md'],
   sitemap: {
-    hostname: 'https://halimbawa-wiki.com'
+    hostname: 'https://glenn-tugade-rabadon-biography.pages.dev'
   },
   head: [
     ['meta', { name: 'robots', content: 'index, follow' }],
