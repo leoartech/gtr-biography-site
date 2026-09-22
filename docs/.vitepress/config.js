@@ -17,6 +17,7 @@ export default defineConfig({
   title: 'Glenn Tugade Rabadon - Wiki & Biography',
   description: pageDescription,
   lang: 'en-US',
+  lastUpdated: true,
   srcExclude: ['architecture-plan.md', 'biography-details.md'],
   sitemap: {
     hostname: 'https://glenn-tugade-rabadon-biography.pages.dev'
@@ -57,7 +58,7 @@ export default defineConfig({
       { text: 'Biography', link: '#biography' },
       { text: 'Aviation Business', link: '#aviation-business' },
       { text: 'Philanthropy', link: '#philanthropy' },
-      { text: 'Source Notes', link: '#references' }
+      { text: 'Source Notes', link: '#source-notes' }
     ],
     sidebar: [
       {
@@ -66,7 +67,7 @@ export default defineConfig({
           { text: 'Biography', link: '#biography' },
           { text: 'Aviation Business', link: '#aviation-business' },
           { text: 'Philanthropy', link: '#philanthropy' },
-          { text: 'Source Notes', link: '#references' }
+          { text: 'Source Notes', link: '#source-notes' }
         ]
       }
     ],

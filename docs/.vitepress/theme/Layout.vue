@@ -1,5 +1,6 @@
 <script setup>
-import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useData } from 'vitepress'
 import ProfileInfobox from './ProfileInfobox.vue'
 
 const sections = [
@@ -7,12 +8,25 @@ const sections = [
   { text: 'Aviation career', href: '#_23-years-in-the-sky-and-a-lifetime-of-aviation' },
   { text: 'Aviation business', href: '#aviation-business' },
   { text: 'Philanthropy', href: '#philanthropy' },
-  { text: 'Source Notes', href: '#references' }
+  { text: 'Source Notes', href: '#source-notes' }
 ]
 
 const isContentsOpen = ref(false)
 const drawerRef = ref(null)
 const menuButtonRef = ref(null)
+const { page } = useData()
+const lastUpdated = computed(() => {
+  const timestamp = page.value.lastUpdated
+  if (!timestamp) return null
+
+  const date = new Date(timestamp)
+  if (Number.isNaN(date.getTime())) return null
+
+  return {
+    iso: date.toISOString(),
+    text: new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(date)
+  }
+})
 
 function openContents() {
   isContentsOpen.value = true
@@ -67,7 +81,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="wiki-app">
+  <div id="top" class="wiki-app">
     <header class="site-header">
       <a class="site-brand" href="#glenn-tugade-rabadon" aria-label="Glenn Tugade Rabadon biography home">
         <span class="site-mark" aria-hidden="true">GTR</span>
@@ -82,7 +96,7 @@ onBeforeUnmount(() => {
         <a href="#biography">Biography</a>
         <a href="#aviation-business">Business</a>
         <a href="#philanthropy">Philanthropy</a>
-        <a href="#references">Source Notes</a>
+        <a href="#source-notes">Source Notes</a>
       </nav>
 
       <button
@@ -105,7 +119,7 @@ onBeforeUnmount(() => {
         <p class="rail-title">Glenn Tugade Rabadon</p>
         <div class="rail-actions" aria-label="Article actions">
           <a href="#glenn-tugade-rabadon">Article</a>
-          <a href="#references">Source Notes</a>
+          <a href="#source-notes">Source Notes</a>
         </div>
 
         <nav class="toc-nav" aria-label="Table of contents">
@@ -127,6 +141,23 @@ onBeforeUnmount(() => {
       </aside>
     </main>
 
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="site-footer-inner">
+        <div class="footer-copy">
+          <p>© 2026 Glenn Tugade Rabadon. All rights reserved.</p>
+          <p>This biography is maintained for biographical reference.</p>
+          <p v-if="lastUpdated" class="footer-updated">
+            Last updated: <time :datetime="lastUpdated.iso">{{ lastUpdated.text }}</time>
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#top">Biography &amp; Profile</a>
+          <a href="#source-notes">Source Notes</a>
+          <a href="#top">Back to top</a>
+        </nav>
+      </div>
+    </footer>
+
     <Transition name="contents-drawer">
       <div v-if="isContentsOpen" class="contents-backdrop" @click.self="closeContents">
         <aside
@@ -147,7 +178,7 @@ onBeforeUnmount(() => {
 
           <div class="rail-actions" aria-label="Article actions">
             <a href="#glenn-tugade-rabadon" @click="closeContents">Article</a>
-            <a href="#references" @click="closeContents">Source Notes</a>
+            <a href="#source-notes" @click="closeContents">Source Notes</a>
           </div>
 
           <nav class="toc-nav" aria-label="Article table of contents">

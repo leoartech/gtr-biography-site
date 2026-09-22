@@ -221,7 +221,7 @@ Pilot • Educator • Entrepreneur • Leader • Philanthropist • Filipino<s
 
 <section class="wiki-citations">
 
-<h2 id="references">Source Notes</h2>
+<h2 id="source-notes">Source Notes</h2>
 
 1. <span id="cite-1">Biographical information provided for Capt. Glenn Tugade Rabadon — opening profile and professional identity.</span> [↑](#ref-1)
 2. <span id="cite-2">Biographical information provided for Capt. Glenn Tugade Rabadon — birth details, location, and professional experience.</span> [↑](#ref-2)
