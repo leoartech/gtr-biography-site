@@ -23,6 +23,7 @@ export default defineConfig({
   },
   head: [
     ['meta', { name: 'robots', content: 'index, follow' }],
+    ['meta', { name: 'google-site-verification', content: '4Jl0-6HHyxS2VSRDnyPlRnE2XblqHjG5gy3uQINP540' }],
     ['meta', { name: 'author', content: 'Glenn Tugade Rabadon' }],
     ['link', { rel: 'canonical', href: siteUrl }],
     ['meta', { property: 'og:type', content: 'profile' }],
