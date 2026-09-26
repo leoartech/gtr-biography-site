@@ -13,6 +13,14 @@ const personStructuredData = {
   description: pageDescription
 }
 
+const websiteStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Glenn Tugade Rabadon',
+  alternateName: ['GTR', 'Glenn Tugade Rabadon Biography'],
+  url: siteUrl
+}
+
 export default defineConfig({
   title: 'Glenn Tugade Rabadon - Wiki & Biography',
   description: pageDescription,
@@ -31,6 +39,7 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'Glenn Tugade Rabadon - Wiki & Biography' }],
     ['meta', { property: 'og:description', content: pageDescription }],
     ['meta', { property: 'og:url', content: siteUrl }],
+    ['meta', { property: 'og:site_name', content: 'Glenn Tugade Rabadon' }],
     ['meta', { property: 'og:image', content: socialImageUrl }],
     ['meta', { property: 'og:image:alt', content: socialImageAlt }],
     ['meta', { property: 'og:image:width', content: '1733' }],
@@ -41,6 +50,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: socialImageUrl }],
     ['meta', { name: 'twitter:image:alt', content: socialImageAlt }],
     ['script', { type: 'application/ld+json' }, JSON.stringify(personStructuredData)],
+    ['script', { type: 'application/ld+json' }, JSON.stringify(websiteStructuredData)],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
